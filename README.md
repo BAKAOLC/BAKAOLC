@@ -60,5 +60,5 @@
     <img width="50" src="https://i.loli.net/2021/01/21/UbrhXveL7MK4unZ.png">
     提供资助
   </h3>
-  <img width="1000" src="https://i.loli.net/2021/01/21/6jO3VnlKr2d95RG.png" alt="sponsor">
+  <img width="1000" src="https://s2.loli.net/2022/08/22/ZTY3PaQl8mR5pwc.png" alt="sponsor">
 </div>
