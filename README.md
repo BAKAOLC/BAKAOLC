@@ -24,10 +24,12 @@
     == 当前主要项目 ==
     <br>
     <a href="https://github.com/BAKAOLC/Ritsukage-Core"><img src="https://img.shields.io/badge/Repository-Ritsukage%20Core-ff69b4?style=for-the-badge"></a>
-    <br>
     <img src="https://img.shields.io/github/license/BAKAOLC/Ritsukage-Core?style=for-the-badge">
     <img src="https://img.shields.io/github/stars/BAKAOLC/Ritsukage-Core?style=for-the-badge">
-    <img src="https://img.shields.io/github/actions/workflow/status/BAKAOLC/Ritsukage-Core/.github/workflows/ci.yml?branch=master&style=for-the-badge">
+    <br>
+    <a href="https://github.com/BAKAOLC/RitsukageGif"><img src="https://img.shields.io/badge/Repository-RitsukageGif-ff69b4?style=for-the-badge"></a>
+    <img src="https://img.shields.io/github/license/BAKAOLC/RitsukageGif?style=for-the-badge">
+    <img src="https://img.shields.io/github/stars/BAKAOLC/RitsukageGif?style=for-the-badge">
   </h4>
 </div>
 
