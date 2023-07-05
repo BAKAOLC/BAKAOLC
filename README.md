@@ -1,7 +1,3 @@
-<div align="center">
-  <img width="200" src="https://i.loli.net/2021/01/15/PUFRbs5M6yfWCKn.png" alt="logo">
-</div>
-
 ---
 
 <div align="center">你好，这里是OLC<br>一个普通的随心而为的程序开发者</h4>
@@ -31,7 +27,7 @@
     <br>
     <img src="https://img.shields.io/github/license/BAKAOLC/Ritsukage-Core?style=for-the-badge">
     <img src="https://img.shields.io/github/stars/BAKAOLC/Ritsukage-Core?style=for-the-badge">
-    <img src="https://img.shields.io/github/workflow/status/BAKAOLC/Ritsukage-Core/.NET%20Core/master?style=for-the-badge">
+    <img src="https://img.shields.io/github/actions/workflow/status/BAKAOLC/Ritsukage-Core/.github/workflows/ci.yml?branch=master&style=for-the-badge">
   </h4>
 </div>
 
@@ -49,7 +45,9 @@
     <br>
     Twitter: <a href="https://twitter.com/BAKAOLC">BAKAOLC</a>
     <br>
-    Email: <a href="mailto:Ritsukage@qq.com">Ritsukage@qq.com</a>
+    Email: <a href="mailto:utsumabo@ritsukage.com">utsumabo@ritsukage.com</a>
+    <br>
+    Home Page: <a href="https://ritsukage.com">https://ritsukage.com</a>
   </h4>
 </div>
 
