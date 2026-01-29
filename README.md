@@ -1,64 +1,93 @@
+<div align="center">
+
+# 👋 你好，这里是 OLC
+
+### 一个普通的随心而为的程序开发者
+
+</div>
+
 ---
 
-<div align="center">你好，这里是OLC<br>一个普通的随心而为的程序开发者</h4>
+## 📌 个人介绍
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      
+### 🆔 常用 ID
+
+- **OLC**
+- **BAKAOLC**
+- **律影映幻**
+- **Ritsukage Utsumabo**
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 联系方式
+
+<p align="center">
+
+<a href="http://qm.qq.com/cgi-bin/qm/qr?k=jAvYv1q-74ZWPpkvhL3WHQsDR8lXZzHV">
+  <img src="https://img.shields.io/badge/QQ-2565128043-EB1923?style=flat&logo=tencentqq&logoColor=white" alt="QQ"/>
+</a>
+
+<a href="https://space.bilibili.com/3818840">
+  <img src="https://img.shields.io/badge/Bilibili-欧艾露汐-00A1D6?style=flat&logo=bilibili&logoColor=white" alt="Bilibili"/>
+</a>
+
+<a href="https://twitter.com/BAKAOLC">
+  <img src="https://img.shields.io/badge/Twitter-@BAKAOLC-1DA1F2?style=flat&logo=x&logoColor=white" alt="Twitter"/>
+</a>
+
+<a href="mailto:utsumabo@ritsukage.com">
+  <img src="https://img.shields.io/badge/Email-utsumabo@ritsukage.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+<a href="https://ritsukage.com">
+  <img src="https://img.shields.io/badge/Homepage-ritsukage.com-4285F4?style=flat&logo=googlechrome&logoColor=white" alt="Homepage"/>
+</a>
+
+</p>
+
+</td>
+  </tr>
+</table>
 
 ---
+
+## 📊 GitHub 统计
 
 <div align="center">
-  <h3>
-    <img width="50" src="https://i.loli.net/2021/01/21/UbrhXveL7MK4unZ.png">
-    个人介绍
-  </h3>
-  <h4>
-    == 常用ID ==
-    <br>
-    OLC
-    <br>
-    BAKAOLC
-    <br>
-    律影映幻
-    <br>
-    Ritsukage Utsumabo
-    <br>
-    <br>
-    == 当前主要项目 ==
-    <br>
-    <a href="https://github.com/BAKAOLC/RitsukageBotForDiscord"><img src="https://img.shields.io/badge/Repository-RitsukageBotForDiscord-ff69b4?style=for-the-badge"></a>
-    <img src="https://img.shields.io/github/license/BAKAOLC/RitsukageBotForDiscord?style=for-the-badge">
-    <img src="https://img.shields.io/github/stars/BAKAOLC/RitsukageBotForDiscord?style=for-the-badge">
-    <br>
-    <a href="https://github.com/BAKAOLC/RitsukageGif"><img src="https://img.shields.io/badge/Repository-RitsukageGif-ff69b4?style=for-the-badge"></a>
-    <img src="https://img.shields.io/github/license/BAKAOLC/RitsukageGif?style=for-the-badge">
-    <img src="https://img.shields.io/github/stars/BAKAOLC/RitsukageGif?style=for-the-badge">
-  </h4>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
+  <img alt="GitHub Stats" src="./profile/stats-light.svg">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs-light.svg">
+  <img alt="GitHub Top Languages" src="./profile/top-langs-light.svg">
+</picture>
+
+</div>
+
+---
+
+## 💖 赞助支持
+
+<div align="center">
+
+如果我的项目对你有帮助，欢迎赞助支持！你的支持是我持续创作的动力 ✨
+
+<img width="800" src="https://s2.loli.net/2022/08/22/ZTY3PaQl8mR5pwc.png" alt="赞助二维码">
+
 </div>
 
 ---
 
 <div align="center">
-  <h3>
-    <img width="50" src="https://i.loli.net/2021/01/21/UbrhXveL7MK4unZ.png">
-    联系方式
-  </h3>
-  <h4>
-    QQ: <a href="http://qm.qq.com/cgi-bin/qm/qr?k=jAvYv1q-74ZWPpkvhL3WHQsDR8lXZzHV 2565128043">2565128043</a>
-    <br>
-    Bilibili: <a href="https://space.bilibili.com/3818840">欧艾露汐</a>
-    <br>
-    Twitter: <a href="https://twitter.com/BAKAOLC">BAKAOLC</a>
-    <br>
-    Email: <a href="mailto:utsumabo@ritsukage.com">utsumabo@ritsukage.com</a>
-    <br>
-    Home Page: <a href="https://ritsukage.com">https://ritsukage.com</a>
-  </h4>
-</div>
-
----
-
-<div align="center">
-  <h3>
-    <img width="50" src="https://i.loli.net/2021/01/21/UbrhXveL7MK4unZ.png">
-    提供资助
-  </h3>
-  <img width="1000" src="https://s2.loli.net/2022/08/22/ZTY3PaQl8mR5pwc.png" alt="sponsor">
+  <sub>💫 感谢你的访问！欢迎探索我的其他项目 💫</sub>
 </div>

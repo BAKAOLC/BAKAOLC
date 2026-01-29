@@ -1,0 +1,56 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 每天午夜运行一次
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 生成 GitHub 统计卡片（明亮主题）
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=vue'
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成 GitHub 统计卡片（暗黑主题）
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&theme=react'
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成语言统计卡片（明亮主题）
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&theme=vue&langs_count=8'
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 生成语言统计卡片（暗黑主题）
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&theme=react&langs_count=8'
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 提交更新的卡片
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README stats cards" || exit 0
+          git push
