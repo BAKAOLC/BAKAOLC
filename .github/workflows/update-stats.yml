@@ -15,13 +15,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 用户统计查询需要用户令牌；默认 GITHUB_TOKEN 会返回 FORBIDDEN 错误卡片。
+      # STATS_TOKEN 仅用于读取统计数据，提交仍使用 checkout 的 GITHUB_TOKEN。
+      - name: 检查统计令牌
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "::error::请在仓库 Actions secrets 中配置 STATS_TOKEN（可读取用户统计的个人访问令牌）。默认 GITHUB_TOKEN 无法完成此查询。"
+            exit 1
+          fi
+
       - name: 生成 GitHub 统计卡片（明亮主题）
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: stats
           options: 'username=${{ github.repository_owner }}&show_icons=true&theme=vue'
           path: profile/stats-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: 生成 GitHub 统计卡片（暗黑主题）
         uses: soulteary/github-readme-stats-action@v1.0.0
@@ -29,7 +40,7 @@ jobs:
           card: stats
           options: 'username=${{ github.repository_owner }}&show_icons=true&theme=react'
           path: profile/stats-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: 生成语言统计卡片（明亮主题）
         uses: soulteary/github-readme-stats-action@v1.0.0
@@ -37,7 +48,7 @@ jobs:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&theme=vue&langs_count=8'
           path: profile/top-langs-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: 生成语言统计卡片（暗黑主题）
         uses: soulteary/github-readme-stats-action@v1.0.0
@@ -45,12 +56,18 @@ jobs:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&theme=react&langs_count=8'
           path: profile/top-langs-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
+
+      - name: 校验生成的卡片
+        run: python3 .github/scripts/validate_stats.py
 
       - name: 提交更新的卡片
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
-          git commit -m "Update README stats cards" || exit 0
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update README stats cards"
           git push
